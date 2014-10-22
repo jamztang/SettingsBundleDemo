@@ -14,6 +14,7 @@
 		1A44D51119F7D5A700593002 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A44D51019F7D5A700593002 /* Images.xcassets */; };
 		1A44D51419F7D5A700593002 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A44D51219F7D5A700593002 /* LaunchScreen.xib */; };
 		1A44D52019F7D5A700593002 /* SettingsBundleDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A44D51F19F7D5A700593002 /* SettingsBundleDemoTests.m */; };
+		1A44D52C19F7D6FD00593002 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1A44D52B19F7D6FD00593002 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		1A44D51919F7D5A700593002 /* SettingsBundleDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettingsBundleDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A44D51E19F7D5A700593002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A44D51F19F7D5A700593002 /* SettingsBundleDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsBundleDemoTests.m; sourceTree = "<group>"; };
+		1A44D52B19F7D6FD00593002 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		1A44D50319F7D5A700593002 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1A44D52B19F7D6FD00593002 /* Settings.bundle */,
 				1A44D50419F7D5A700593002 /* Info.plist */,
 				1A44D50519F7D5A700593002 /* main.m */,
 			);
@@ -129,6 +132,7 @@
 				1A44D4FC19F7D5A700593002 /* Sources */,
 				1A44D4FD19F7D5A700593002 /* Frameworks */,
 				1A44D4FE19F7D5A700593002 /* Resources */,
+				1A44D52D19F7D73500593002 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -199,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A44D52C19F7D6FD00593002 /* Settings.bundle in Resources */,
 				1A44D50F19F7D5A700593002 /* Main.storyboard in Resources */,
 				1A44D51419F7D5A700593002 /* LaunchScreen.xib in Resources */,
 				1A44D51119F7D5A700593002 /* Images.xcassets in Resources */,
@@ -213,6 +218,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A44D52D19F7D73500593002 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/xcode-git-hash.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A44D4FC19F7D5A700593002 /* Sources */ = {
